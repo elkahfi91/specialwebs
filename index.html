@@ -42,36 +42,43 @@
             </p>
             <p>Stay connected</p>
             <nav class="footer-social-links">
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal"><a class="social-link"><i
+                <button data-bs-toggle="modal" data-bs-target="#waModal"><a class="social-link"><i
                             class="mdi mdi-whatsapp"></i></a></button>
             </nav>
             
         </div>
     </main>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="waModal" tabindex="-1" aria-labelledby="waModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="waModalLabel">Contact Entity</h1>
                 </div>
                 <div class="modal-body">
-                    <a href="https://twitter.com/twcloudchen" class="avatar circle">
-                        <img class="circle img" height="128" width="128"
-                            src="http://www.gravatar.com/avatar/9017a5f22556ae0eb7fb0710711ec125?s=128"
-                            alt="Cloud Chen">
+                    <a href="#" class="avatar">
+                        <img class="avatar circle img" height="128" width="128" src="assets/images/IMG_20240607_052010.jpg" alt="mLev">
+                        <figure>
+                            <b>Nice Name | Sure Name: </b>mLev ; | M Levian<br>
+                            <b>Old :</b> 31 Yo | 50kg<br>
+                            <b>Address :</b> Jawa Timur
+                        </figure>
+
                     </a>
+                    <span class="mdi mdi-qrcode-scan"></span>
+                    <div id="liveAlertPlaceholder"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn"><i class="mdi mdi-qrcode-scan"></i>Generate Qr Code
+                        Whatsapp</button>
                 </div>
             </div>
         </div>
     </div>
     
     <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/snippets.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
